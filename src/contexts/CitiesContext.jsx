@@ -6,8 +6,8 @@ import {
     useReducer,
 } from "react";
 
-const BASE_URL = "http://localhost:8000/cities";
-// const BASE_URL = "http://localhost:3000";
+// const BASE_URL = "http://localhost:8000/cities";
+const BASE_URL = "https://my-json-server.typicode.com/MohammadArmaan/World-Wise/cities";
 
 const CitiesContext = createContext();
 
@@ -83,7 +83,6 @@ function CitiesProvider({ children }) {
             try {
                 const res = await fetch(`${BASE_URL}`);
                 const data = await res.json();
-                console.log(data);
 
                 dispatch({ type: "cities/loaded", payload: data });
             } catch (err) {
@@ -125,7 +124,6 @@ function CitiesProvider({ children }) {
                 },
             });
             const data = await res.json();
-            console.log(data.data);
             dispatch({ type: "city/created", payload: data });
         } catch (err) {
             dispatch({
