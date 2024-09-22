@@ -16,7 +16,7 @@ Welcome to **World Wise**, an interactive web application where users can explor
 
 ## Live Preview
 
-You can try the live version of World Wise [World Wise](https://world-wise-arman.vercel.app/).
+You can try the live version of World Wise [World Wise](https://world-wise-armaan.vercel.app/).
 
 ## Developer
 
